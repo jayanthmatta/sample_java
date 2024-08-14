@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        NEXUS_URL = '44.202.215.134:8081'
+        NEXUS_URL = '44.202.215.134:8081' // comment
         NEXUS_REPOSITORY = 'sample_java'  // Replace with your repository name
         NEXUS_GROUP_ID = 'org.springframework.boot' // Replace with your group ID
         NEXUS_ARTIFACT_ID = 'spring-boot-starter-parent'          // Replace with your artifact ID
