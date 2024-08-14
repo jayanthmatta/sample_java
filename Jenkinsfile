@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        NEXUS_URL = '3.237.254.217:8081'
+        NEXUS_URL = '44.202.215.134:8081'
         NEXUS_REPOSITORY = 'sample_java'  // Replace with your repository name
         NEXUS_GROUP_ID = 'org.springframework.boot' // Replace with your group ID
         NEXUS_ARTIFACT_ID = 'spring-boot-starter-parent'          // Replace with your artifact ID
@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Sonar') {
             steps {
-                sh "mvn sonar:sonar -Dsonar.projectKey=sample_java -Dsonar.host.url=http://54.172.215.49:9000 -Dsonar.login=1eec39150c639c4d5210400a84123301cff584ed"
+                sh "mvn sonar:sonar -Dsonar.projectKey=sample_java -Dsonar.host.url=http://54.164.172.98:9000 -Dsonar.login=1eec39150c639c4d5210400a84123301cff584ed"
             }
         }
         stage('Nexus') {
