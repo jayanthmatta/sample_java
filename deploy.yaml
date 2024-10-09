@@ -27,7 +27,7 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: my-java-springboot-svc
+  name: my-java-springboot-svc-new
 spec:
   ports:
     - name: http-8081
