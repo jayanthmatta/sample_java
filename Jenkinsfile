@@ -15,7 +15,7 @@ pipeline {
                 checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'Github', url: 'https://github.com/jayanthmatta/sample_java.git']])
             }
         }
-        stage('Maven') {
+        stage('Maven_build') {
             steps {
                 sh "mvn clean install"
             }
