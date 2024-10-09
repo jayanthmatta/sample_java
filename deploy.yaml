@@ -1,6 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 #newline
+#newline2
 metadata:
   name: my-java-springboot
 spec:
