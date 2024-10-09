@@ -10,7 +10,7 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {
+        stage('Checkout_code') {
             steps {
                 checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[credentialsId: 'Github', url: 'https://github.com/jayanthmatta/sample_java.git']])
             }
