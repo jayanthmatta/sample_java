@@ -1,6 +1,6 @@
 #added dev line
 pipeline {
-    agent any
+    
     environment {
         NEXUS_URL = '44.202.215.134:8081'
         NEXUS_REPOSITORY = 'sample_java'  // Replace with your repository name
